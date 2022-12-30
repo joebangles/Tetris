@@ -1,0 +1,219 @@
+table {
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+span {
+    display: table;
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+    cursor: default;
+    user-select: none;
+}
+br {
+    user-select: none;
+}
+#board {
+    height: 80vh;
+    width: 40vh;
+}
+#next-piece{
+    height: 16vh;
+    width: 24vh;
+}
+#bbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #808080;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#bg {
+    position: relative;
+    background-color: #595959;
+    height: 80vh;
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+#game-info {
+    position: relative;
+    background-color: #404040;
+    height: 40vh;
+    width: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -62vh;
+    text-align: center;
+    opacity: 95%;
+}
+#pause {
+    position:relative;
+    background-color: #404040;
+    height:80vh;
+    width:40vh;
+    margin-top:-80vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 95%;
+}
+#pause-text {
+    padding-top:20vh;
+    font-size:5vh;
+    vertical-align:middle;
+    color:#c0f0cd;
+}
+#menu {
+    position: relative;
+    background-color: grey;
+    top: 0;
+    height: 80vh;
+    width: 40vh;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0.2vh solid black;
+    z-index: 1;
+    text-align: center;
+}
+#settings{
+    position: relative;
+    background-color: grey;
+    top: 0;
+    height: 80vh;
+    width: 40vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80.4vh;
+    border: 0.2vh solid black;
+    z-index: 2;
+    text-align: left;
+}
+.settings-key{
+    display: inline-block;
+    font-size: 2.5vh;
+    margin-left: 5vh;
+    color: #5e5e5e;
+}
+.settings-value{
+    display: inline-block;
+    font-size: 2.5vh;
+    float: right;
+    margin-right: 2vh;
+    color: #bdc7de;
+}
+.settings-header{
+    margin-left: 3vh;
+    margin-top: 2vh;
+    color: #141414;
+}
+.settings-subhead{
+    margin-left: 4vh;
+    color: #363636;
+}
+#clockwise-key:hover ~ #clockwise-value{
+    color: #d6d6d6;
+}
+#counter-key:hover ~ #counter-value{
+    color: #d6d6d6;
+}
+#left-key:hover ~ #left-value{
+    color: #d6d6d6;
+}
+#right-key:hover ~ #right-value{
+    color: #d6d6d6;
+}
+#down-key:hover ~ #down-value{
+    color: #d6d6d6;
+}
+#hard-key:hover ~ #hard-value{
+    color: #d6d6d6;
+}
+#pause-key:hover ~ #pause-value{
+    color: #d6d6d6;
+}
+#outline-key:hover ~ #outline-value{
+    color: #d6d6d6;
+}
+.exit-settings{
+    margin-top: 25vh;
+    color: #4d4d4d;
+}
+#next {
+    position: absolute;
+    background-color: #888888;
+    right: -24vh;
+    top: 5vh;
+    height: 16vh;
+    width: 24vh;
+}
+.i {
+    background-color: #e6bc5a;
+}
+.s {
+    background-color: #eb8f9e;
+}
+.z {
+    background-color: #d98feb;
+}
+.o {
+    background-color: #ffffb5;
+}
+.t {
+    background-color: #63ff83;
+}
+.j {
+    background-color: #a600ff;
+}
+.l {
+    background-color: #c0f0cd;
+}
+.preview {
+    opacity: 50%;
+}
+
+.menu-items{
+    font-size: 4vh;
+    display: inline-block;
+    color: #e0e0e0;
+    margin-top: 2vh;
+}
+.end-items{
+    font-size: 2vh;
+    display: inline-block;
+    color: #e0e0e0;
+    opacity: 100%;
+}
+#start-over{
+    font-size: 3vh;
+    margin-top: 10vh;
+    display: inline-block;
+    color: #d44a4a;
+}
+#lvl-select{
+    margin-top: 10vh;
+}
+#start-button{
+    margin-top: 20vh;
+}
+.settings-b{
+    color: #9cb9ff;
+}
+#start-over.mover:hover{
+    color: #d9b8b8;
+}
+.mover:hover{
+    color: #d6d6d6;
+}
+.gray-out{
+    color: #9e9e9e;
+}
+.invis {
+    display: none;
+}
+.info-text {
+    font-size: 2vh;
+}

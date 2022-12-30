@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link type="text/css" rel="stylesheet" href="naub.css">
+</head>
+
+<body>
+<div id="menu" class="">
+    <span style="font-size:15vh;">tetris</span>
+    <span class="menu-items">starting level</span>
+    <span class="menu-items gray-out" id="lvl-down" onclick="level(-1)" >&lt;</span>
+    <span class="menu-items" id="lvl-select">1</span>
+    <span class="menu-items mover" id="lvl-up" onclick="level(1)">&gt;</span>
+    <span class="menu-items settings-b mover" onclick="settings()">settings</span>
+    <br>
+    <span id="start-button" class="menu-items mover" onclick="manager.startGame()">start</span>
+</div>
+
+<div id="settings" class="invis">
+    <span style="font-size:5vh" class="settings-b">settings</span>
+    <span class="settings-key settings-header">gameplay</span>
+    <br>
+    <span id="outline-key" class="settings-key" onclick="outline()">drop outline</span> <span id="outline-value" class="settings-value mover" onclick="outline()" >off</span>
+    <br>
+    <span id="speed-key" class="settings-key" onclick="speed()">drop speed</span> <span id="speed-value" class="settings-value mover" onclick="speed()">medium</span>
+    <br>
+    <span class="settings-key settings-header">keybinds</span>
+    <br>
+    <span class="settings-key settings-subhead">rotation</span>
+    <br>
+    <span id="clockwise-key" class="settings-key" onclick="listen('clockwise')">clockwise</span> <span id="clockwise-value" class="settings-value mover" onclick="listen('clockwise')">s</span>
+    <br>
+    <span id="counter-key" class="settings-key" onclick="listen('counter')">counter</span> <span id="counter-value" class="settings-value mover" onclick="listen('counter')">s</span>
+    <br>
+    <span class="settings-key settings-subhead">movement</span>
+    <br>
+    <span id="left-key" class="settings-key" onclick="listen('left')">piece left</span> <span id="left-value"class="settings-value mover" onclick="listen('left')">s</span>
+    <br>
+    <span id="right-key" class="settings-key" onclick="listen('right')">piece right</span> <span id="right-value"class="settings-value mover" onclick="listen('right')">s</span>
+    <br>
+    <span id="down-key" class="settings-key" onclick="listen('down')">piece down</span> <span id="down-value"class="settings-value mover" onclick="listen('down')">s</span>
+    <br>
+    <span id="hard-key" class="settings-key" onclick="listen('hard')">hard drop</span> <span id="hard-value" class="settings-value mover" onclick="listen('hard')">s</span>
+    <br>
+    <span class="settings-key settings-subhead">misc</span>
+    <br>
+    <span id="pause-key" class="settings-key" onclick="listen('pause')">pause</span> <span id="pause-value" class="settings-value mover" onclick="listen('pause')">s</span>
+
+    <span style="font-size:4vh;" class="exit-settings mover" onclick="back()">back to menu</span>
+</div>
+
+<div id="bbg">
+
+    <div id="bg" class="invis">
+        <table id="board">
+
+        </table>
+        <div id="next">
+            <table id="next-piece">
+
+            </table>
+        </div>
+
+        <div id="game-info" class="invis">
+            <span class="menu-items">game over</span>
+            <br><br><br><br><br>
+            <span id="end-lvl" class="end-items">level: 0</span>
+            <br>
+            <span id="end-lines" class="end-items">lines: 0</span>
+            <br>
+            <span id="end-score" class="end-items">score: 0</span>
+            <span id="start-over" class="end-items mover" onclick="restart()">continue</span>
+
+        </div>
+
+        <div id="pause" class="invis">
+            <span id="pause-text">paused</span>
+        </div>
+
+    </div>
+
+
+    <span id="lvl" class="invis info-text">
+          Level: 1
+        </span>
+    <span id="lines" class="invis info-text">
+          Lines: 0
+        </span>
+    <span id="score" class="invis info-text">
+          Score: 0
+        </span>
+</div>
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
